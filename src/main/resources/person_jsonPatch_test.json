@@ -1,0 +1,61 @@
+{
+  "id": "103",
+  "rollnumber": 13,
+  "name": {
+    "firstname": "Bibon",
+    "lastname": "Trivandrum"
+  },
+  "dateofjoining": "2020-07-23T04:46:35+0000",
+  "age": 39,
+  "gender": "male",
+  "technology": "Java",
+  "favoriteFruit": "apple",
+  "company": [
+    {
+      "title": "UST",
+      "email": "bibin@ust.com",
+      "phone": "+1 (949) 588-3470",
+      "location": {
+        "country": "India",
+        "address": [
+          {
+            "address1": "Kollam",
+            "address2": "Attingal"
+          },
+          {
+            "address1": "Trivandrum",
+            "address2": "Kazhakkuttam"
+          }
+        ]
+      }
+    },
+    {
+      "title": "IBS",
+      "email": "bibin@infosys.com",
+      "phone": "+61 2 9374 4000",
+      "location": {
+        "country": "UK",
+        "address": [
+          {
+            "address1": "UK1",
+            "address2": "UKaddress1"
+          },
+          {
+            "address1": "UK2",
+            "address2": "UKaddress2"
+          }
+        ]
+      }
+    }
+  ],
+  "skillset": [
+    "java",
+    "oracle",
+    "mysql",
+    "db2",
+    "mongodb",
+    "dotnet",
+    "plsql"
+  ],
+  "active": false
+}

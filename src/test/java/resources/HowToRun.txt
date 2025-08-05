@@ -1,0 +1,26 @@
+1. Running a Single Test Class:
+mvn test -Dtest=YourTestClassName
+
+2. Running a Single Test Method:
+mvn test -Dtest=YourTestClassName#yourTestMethodName
+
+3. Running Multiple Test Classes or Methods:
+mvn test -Dtest=TestClassOne,TestClassTwo#methodA
+
+=======================  Using Wildcards: ============================
+
+1. To run all tests in classes starting with "Integration":
+ mvn test -Dtest=Integration*
+
+2. To run all methods starting with "test" in a specific class:
+mvn test -Dtest=YourTestClassName#test*
+
+Note: Ensure you are in the root directory of your Maven Spring Boot project when executing these commands.
+
+===========================================================================================================================
+
+Regarding Coverage
+
+mvn clean verify
+
+Note: This covers unit and integration test coverage as long as they run in the same Maven lifecycle (e.g. during verify).

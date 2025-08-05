@@ -1,0 +1,60 @@
+{
+  "id": "101",
+  "rollnumber": 11,
+  "name": {
+    "firstname": "Anoop",
+    "lastname": "Nedumbassery"
+  },
+  "dateofjoining": "2020-07-23T04:46:35+0000",
+  "age": 39,
+  "gender": "male",
+  "technology": "Java",
+  "favoriteFruit": "apple",
+  "company": [
+    {
+      "title": "TCS",
+      "email": "anoop@tcs.com",
+      "phone": "+1 (949) 568-3470",
+      "location": {
+        "country": "India",
+        "address": [
+          {
+            "address1": "Ernakulam",
+            "address2": "Nedumbassery"
+          },
+          {
+            "address1": "Trivandrum",
+            "address2": "Kazhakkuttam"
+          }
+        ]
+      }
+    },
+    {
+      "title": "INFOSYS",
+      "email": "ranjith@infosys.com",
+      "phone": "+61 2 9374 4000",
+      "location": {
+        "country": "Australia",
+        "address": [
+          {
+            "address1": "Austin1",
+            "address2": "Austinaddress1"
+          },
+          {
+            "address1": "Austin2",
+            "address2": "Austinaddress2"
+          }
+        ]
+      }
+    }
+  ],
+  "skillset": [
+    "java",
+    "angular",
+    "react",
+    "spring",
+    "oracle",
+    "mysql"
+  ],
+  "active": true
+}
