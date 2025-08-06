@@ -48,6 +48,10 @@ public class UserService {
         return userRepository.existsById(id);
     }
     public User patchUser(String id, Map<String, Object> updates) {
+        log.info("patch User is executing .....");
+        log.warn("patch User is executing .....");
+        log.debug("patch User is executing .....");
+        log.error("patch User is executing .....");
         Optional<User> userOptional = userRepository.findById(id);
         if (userOptional.isPresent()) {
             User user = userOptional.get();

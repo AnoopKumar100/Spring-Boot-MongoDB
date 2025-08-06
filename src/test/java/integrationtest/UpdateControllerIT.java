@@ -1,20 +1,28 @@
-package com.springboot.mongodb.springmongo.integrationtest;
+package integrationtest;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.springboot.mongodb.springmongo.model.User;
 import com.springboot.mongodb.springmongo.repository.UpdateRepository;
 import com.springboot.mongodb.springmongo.request.NestedUpdateRequest;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.*;
+import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class UpdateControllerIntegrationTest {
+@SpringBootTest(
+        classes = com.springboot.mongodb.springmongo.SpringmongoApplication.class,
+        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
+)
+@ActiveProfiles("test")
+@TestInstance(TestInstance.Lifecycle.PER_CLASS) //  This line allows non-static @AfterAll
+public class UpdateControllerIT {
 
     @LocalServerPort
     private int port;
@@ -27,6 +35,11 @@ public class UpdateControllerIntegrationTest {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
     private String baseUrl;
+
+    @AfterAll
+    void cleanUpTestCollection() {
+        updateRepository.deleteAll();
+    }
 
     private final String userJson = """
             {

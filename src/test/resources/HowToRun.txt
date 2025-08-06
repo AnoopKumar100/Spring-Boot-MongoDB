@@ -18,8 +18,15 @@ mvn test -Dtest=YourTestClassName#test*
 Note: Ensure you are in the root directory of your Maven Spring Boot project when executing these commands.
 
 ===========================================================================================================================
+Run only unit tests:
+mvn clean test
 
-Regarding Coverage
+
+Command to run only integration tests
+mvn failsafe:integration-test failsafe:verify
+
+
+Regarding Coverage (this will run both unit test and integration test and will do the jacoco coverage)
 
 mvn clean verify
 
