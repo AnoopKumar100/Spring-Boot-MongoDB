@@ -1,0 +1,59 @@
+{
+  "id": "106",
+  "rollnumber": 13,
+  "name": {
+    "firstname": "Soumya1",
+    "lastname": "Trivandrum1"
+  },
+  "dateofjoining": "2020-07-23T04:46:35+0000",
+  "age": 39,
+  "gender": "male",
+  "technology": "Java",
+  "favoriteFruit": "apple",
+  "company": [
+    {
+      "title": "UST",
+      "email": "soumya@ust.com",
+      "phone": "+1 (949) 568-3470",
+      "location": {
+        "country": "India",
+        "address": [
+          {
+            "address1": "Kollam1",
+            "address2": "Attingal1"
+          },
+          {
+            "address1": "Trivandrum1",
+            "address2": "Kazhakkuttam1"
+          }
+        ]
+      }
+    },
+    {
+      "title": "IBS",
+      "email": "soumya2@infosys.com",
+      "phone": "+61 2 9374 4000",
+      "location": {
+        "country": "UK",
+        "address": [
+          {
+            "address1": "UK1",
+            "address2": "UKaddress1"
+          },
+          {
+            "address1": "UK2",
+            "address2": "UKaddress2"
+          }
+        ]
+      }
+    }
+  ],
+  "skillset": [
+    "java",
+    "oracle",
+    "mysql",
+    "db2",
+    "mongodb"
+  ],
+  "active": false
+}

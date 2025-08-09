@@ -1,0 +1,12 @@
+{
+  "id": "64f3a12e3c6b123456789abc",
+  "email": "john.doe@example.com",
+  "name": "John Doe",
+  "age": 32,
+  "bio": "Software engineer who loves open source and working remotely.",
+  "expiryDate": "2025-08-09T12:00:00Z",  // TTL index will auto-delete after this date
+  "location": {
+    "type": "Point",
+    "coordinates": [ -73.935242, 40.730610 ]  // GeoJSON: [longitude, latitude]
+  }
+}
